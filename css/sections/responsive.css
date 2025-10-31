@@ -52,6 +52,10 @@
 
 /* ------- Phone -------- */
 @media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .container {
     max-width: 475px;
     padding: 0.1 ren;
