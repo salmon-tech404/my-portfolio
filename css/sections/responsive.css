@@ -1,6 +1,5 @@
-/* MEDIA Queries */
-
-/* ------- Desktop -------- */
+/*---------------------------*/
+/* ------- DESKTOP -------- */
 @media (max-width: 1536px) {
   .container {
     max-width: 1440px;
@@ -13,7 +12,7 @@
   }
 }
 
-/* ------- Tablet & Small Laptop -------- */
+/* ------- LAPTOP -------- */
 
 @media (max-width: 1280px) {
   .container {
@@ -50,7 +49,22 @@
   }
 }
 
-/* ------- Phone -------- */
+/*==========================================*/
+
+/* ------- BIG TABLET -------- */
+@media (max-width: 850px) {
+  /* Giới thiệu bản thân */
+  .aboutMe__section {
+    margin: 80px auto;
+    & img {
+      display: none;
+    }
+  }
+}
+
+/*==========================================*/
+
+/* ------- SMALL TABLETt -------- */
 @media (max-width: 640px) {
   :root {
     font-size: 14px;
@@ -60,6 +74,7 @@
     max-width: 475px;
     padding: 0.1 ren;
   }
+  /* header */
   header {
     margin-top: 20px;
   }
@@ -68,3 +83,47 @@
     flex-direction: column;
   }
 }
+
+/*==========================================*/
+
+/* ------- SMART PHONE -------- */
+@media (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .header__container {
+    & .header__col--left {
+      & .header__img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  .header__content--left {
+    width: 220px;
+  }
+
+  .header__badge_container {
+    flex-direction: column;
+  }
+
+  .aboutMe__container {
+    padding: 1rem;
+    width: 85%;
+    border-radius: 2rem;
+  }
+  .aboutMe__content--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    gap: 18px;
+  }
+}
+
+/*==========================================*/
