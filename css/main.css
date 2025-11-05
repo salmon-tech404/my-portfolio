@@ -1,7 +1,7 @@
 @import "theme.css";
 @import "./sections/header.css";
 @import "./sections/about-me.css";
-@import "./sections/project.css";
+@import "./sections/projects.css";
 @import "./sections/footer.css";
 @import "./sections/skills.css";
 @import "./sections/responsive.css";
@@ -27,6 +27,11 @@ a {
   margin: 0 auto;
   max-width: 1536px;
   padding: 0 2rem;
+}
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .section__header {

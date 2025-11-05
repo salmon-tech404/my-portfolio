@@ -1,7 +1,7 @@
 .footer__section {
   background: var(--foreground-color);
   color: var(--n-700);
-  padding: 40px 0 40px 0;
+  padding: 80px 0 40px 0;
   border-top: 1px solid hsla(var(--p-700-code), 0.1);
 }
 
@@ -13,21 +13,27 @@
   text-align: center;
   width: 90%;
   margin: 0 auto;
-
-  & h3 {
-    font-size: 1.75rem;
-    color: var(--p-900);
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-
-  & p {
-    font-size: var(--h4-font-size);
-    color: var(--n-500);
-  }
 }
 
-.footer__brand .footer__contact ul {
+.footer__brand h2 {
+  font-size: 1.75rem;
+  color: var(--p-900);
+  margin-bottom: 8px;
+}
+
+.footer__brand p {
+  font-size: 0.95rem;
+  color: var(--n-500);
+}
+
+.footer__contact h3,
+.footer__socials h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: var(--p-900);
+}
+
+.footer__contact ul {
   list-style: none;
   padding: 0;
   margin: 0;
