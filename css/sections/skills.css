@@ -51,7 +51,9 @@
 
   &:nth-child(1) {
     border: none;
-    background: url("../../assets/cat1.jpeg") center / cover no-repeat;
+    background: url("../../assets/songoku-image-01.jpg") center / cover
+      no-repeat;
+    background-position: center 30%;
   }
 
   &:nth-child(2) {
@@ -66,6 +68,14 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+
+      &:nth-child(1) > .icons-list {
+        animation: scrollLeftIcons 30s linear infinite;
+      }
+
+      &:nth-child(2) .icons-list {
+        animation: scrollRightIcons 20s linear infinite;
+      }
     }
     & .icons-list {
       display: flex;
@@ -207,11 +217,13 @@
   }
 
   &:nth-child(4) {
-    background: url("../../assets/cat3.jpeg") center / cover no-repeat;
+    background: url("../../assets/songoku-img-02.jpg") center / cover no-repeat;
     border: none;
+    background-position: center 65%;
 
     &:hover {
-      background-image: url(../../assets/cat2.jpeg);
+      background-image: url(../../assets/songoku-img-03.jpg);
+      background-position: center 50%;
     }
   }
 }
