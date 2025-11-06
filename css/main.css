@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: var(--p-font-size);
   line-height: var(--p-line-height);

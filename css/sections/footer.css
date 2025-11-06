@@ -1,7 +1,7 @@
 .footer__section {
   background: var(--foreground-color);
   color: var(--n-700);
-  padding: 40px 0 40px 0;
+  padding: 20px 0 20px 0;
   border-top: 1px solid hsla(var(--p-700-code), 0.1);
 }
 
@@ -66,7 +66,6 @@
 
 .footer__bottom {
   text-align: center;
-  margin-top: 40px;
   padding-top: 20px;
   font-size: 0.9rem;
   color: var(--n-500);

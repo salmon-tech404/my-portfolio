@@ -202,14 +202,3 @@ table {
   /* 16px */
   --caption-line-height: 1rem;
 }
-
-body {
-  background-color: hsl(228, 81%, 98%, 0.1); /* Nền sáng rất nhạt */
-  background-image: linear-gradient(
-      to right,
-      hsla(228, 81%, 63%, 0.08) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, hsla(228, 81%, 63%, 0.08) 1px, transparent 1px);
-  background-size: 24px 24px;
-}

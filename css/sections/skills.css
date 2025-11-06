@@ -62,19 +62,19 @@
     flex-direction: column;
     justify-content: space-between;
 
-    & .icons_list-wrapper {
+    & .icons-list-wrapper {
       overflow: hidden;
       margin-top: 8px;
       display: flex;
-      flex-wrap: wrap;
+
       gap: 12px;
 
       &:nth-child(1) > .icons-list {
         animation: scrollLeftIcons 30s linear infinite;
       }
 
-      &:nth-child(2) .icons-list {
-        animation: scrollRightIcons 20s linear infinite;
+      &:nth-child(2) > .icons-list {
+        animation: scrollRightIcons 60s linear infinite;
       }
     }
     & .icons-list {
