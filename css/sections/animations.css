@@ -23,3 +23,30 @@
     transform: translateX(calc(0% + 12px));
   }
 }
+
+/* Scroll fade-in */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay for grid children */
+.projects__cards_container .fade-in-up:nth-child(2) { transition-delay: 0.1s; }
+.projects__cards_container .fade-in-up:nth-child(3) { transition-delay: 0.15s; }
+.projects__cards_container .fade-in-up:nth-child(4) { transition-delay: 0.2s; }
+.projects__cards_container .fade-in-up:nth-child(5) { transition-delay: 0.25s; }
+.projects__cards_container .fade-in-up:nth-child(6) { transition-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

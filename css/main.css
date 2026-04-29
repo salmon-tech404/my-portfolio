@@ -1,4 +1,5 @@
 @import "theme.css";
+@import "./sections/navbar.css";
 @import "./sections/header.css";
 @import "./sections/about-me.css";
 @import "./sections/projects.css";
@@ -13,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 :root {
@@ -25,6 +27,7 @@ html {
 }
 
 body {
+  padding-top: 64px;
   background-color: #ffffff;
 
   background: radial-gradient(

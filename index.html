@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio của Vũ Khắc Điệp (Salmon) - Japanese Translator & UX/UI Designer với 5 năm kinh nghiệm trong ngành IT."
+    />
+    <meta property="og:title" content="Salmon — Japanese Translator & Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio của Vũ Khắc Điệp — IT Translator, UX/UI Designer & Web Developer."
+    />
+    <meta property="og:type" content="website" />
     <title>Salmon Simple Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/sections/responsive.css" />
@@ -13,12 +23,25 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <!-- HEADER Part-->
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <span class="navbar__brand">Salmon</span>
+        <ul class="navbar__links">
+          <li><a href="#about" class="nav__link">Giới Thiệu</a></li>
+          <li><a href="#skills" class="nav__link">Kỹ Năng</a></li>
+          <li><a href="#ProjectContainer" class="nav__link">Dự Án</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
     <header>
       <div class="container header__container">
-        <!-- left colume -->
+        <!-- left column -->
         <div class="header__col--left">
           <div class="header__img"></div>
           <div class="header__content--left">
@@ -32,30 +55,22 @@
             </p>
           </div>
         </div>
-        <!-- right colume -->
+        <!-- right column -->
         <div class="header__col--right">
           <h2 class="header__title">Thông Tin Liên Hệ</h2>
-          <p>
-            Email:
-            <span>diep.khacvu@gmail.com</span>
-          </p>
-          <p>
-            Phone:
-            <span>0365479851</span>
-          </p>
+          <p>Email: <span>diep.khacvu@gmail.com</span></p>
+          <p>Phone: <span>0365479851</span></p>
         </div>
       </div>
     </header>
 
     <!-- ABOUT ME -->
-    <section class="aboutMe__section">
-      <!-- image left & right -->
+    <section id="about" class="aboutMe__section">
       <img src="./assets/rocket-icon.svg" alt="rocket icon" />
       <img src="./assets/laptop-icon.svg" alt="laptop icon" />
 
-      <!-- content -->
       <div class="aboutMe__container">
-        <div class="aboutMe__content--container">
+        <div class="aboutMe__content--container fade-in-up">
           <h1 class="section__title">Giới Thiệu Bản Thân</h1>
           <p class="section__description">
             Hi, Mình tên là <span>Vũ Khắc Điệp (Salmon)</span> - Translator
@@ -82,12 +97,11 @@
     </section>
 
     <!-- MY SKILL -->
-    <section class="skills__section">
+    <section id="skills" class="skills__section">
       <div class="container skills__container">
         <!-- skill header -->
-        <div class="section_header">
+        <div class="section_header fade-in-up">
           <h1 class="section__title">Kỹ Năng & Chuyên Môn</h1>
-
           <p class="section__description">
             Chuyên dịch thuật IT và UX/UI, tôi đảm bảo từng thuật ngữ kỹ thuật
             được chuyển tải chính xác nhất, đồng thời giữ nguyên trải nghiệm và
@@ -100,11 +114,10 @@
           <!-- grid item 1 (img)-->
           <div class="skills__grid_item"></div>
           <!-- grid item 2 (icon)-->
-          <div class="skills__grid_item">
-            <!-- grid-child-1 -->
+          <div class="skills__grid_item fade-in-up">
             <div class="skills__grid_item_header">
               <div>
-                <img src="./assets/check-icon.svg" alt="check-icon" class="" />
+                <img src="./assets/check-icon.svg" alt="check-icon" />
                 <h2>Kỹ Năng & Công Nghệ Yêu Thích</h2>
               </div>
               <p>
@@ -113,200 +126,63 @@
                 và đam mê viết mã sạch, dễ bảo trì.
               </p>
             </div>
-            <!-- grid-child-2 -->
             <div>
-              <!-- list item 1 -->
               <div class="icons-list-wrapper">
-                <!-- icon list -->
                 <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/C.svg" alt="C icon" />
-                    <span>C</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="Github icon" />
-                    <span>GITHUB</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS-icon" />
-                    <span>CSS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="Java-icon" />
-                    <span>JAVA</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="HTML-icon" />
-                    <span>HTML</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" />
-                    <span>NODE JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="JS-icon" />
-                    <span>JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="REACT-icon" />
-                    <span>REACT</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-icon"
-                    />
-                    <span>POSTGRESQL</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" />
-                    <span>NEXT JS</span>
-                  </div>
+                  <div class="icon-badges"><img src="./assets/icons/C.svg" alt="C icon" /><span>C</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/github.svg" alt="Github icon" /><span>GITHUB</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/css.svg" alt="CSS-icon" /><span>CSS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/java.svg" alt="Java-icon" /><span>JAVA</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/html.svg" alt="HTML-icon" /><span>HTML</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" /><span>NODE JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/JS.svg" alt="JS-icon" /><span>JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/react.svg" alt="REACT-icon" /><span>REACT</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/postgresql.svg" alt="POSTGRESQL-icon" /><span>POSTGRESQL</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" /><span>NEXT JS</span></div>
                 </div>
                 <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/C.svg" alt="C icon" />
-                    <span>C</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="Github icon" />
-                    <span>GITHUB</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS-icon" />
-                    <span>CSS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="Java-icon" />
-                    <span>JAVA</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="HTML-icon" />
-                    <span>HTML</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" />
-                    <span>NODE JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="JS-icon" />
-                    <span>JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="REACT-icon" />
-                    <span>REACT</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-icon"
-                    />
-                    <span>POSTGRESQL</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" />
-                    <span>NEXT JS</span>
-                  </div>
+                  <div class="icon-badges"><img src="./assets/icons/C.svg" alt="C icon" /><span>C</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/github.svg" alt="Github icon" /><span>GITHUB</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/css.svg" alt="CSS-icon" /><span>CSS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/java.svg" alt="Java-icon" /><span>JAVA</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/html.svg" alt="HTML-icon" /><span>HTML</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" /><span>NODE JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/JS.svg" alt="JS-icon" /><span>JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/react.svg" alt="REACT-icon" /><span>REACT</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/postgresql.svg" alt="POSTGRESQL-icon" /><span>POSTGRESQL</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" /><span>NEXT JS</span></div>
                 </div>
               </div>
-              <!-- list item 2 -->
               <div class="icons-list-wrapper">
-                <!-- icon list -->
                 <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/C.svg" alt="C icon" />
-                    <span>C</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="Github icon" />
-                    <span>GITHUB</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS-icon" />
-                    <span>CSS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="Java-icon" />
-                    <span>JAVA</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="HTML-icon" />
-                    <span>HTML</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" />
-                    <span>NODE JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="JS-icon" />
-                    <span>JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="REACT-icon" />
-                    <span>REACT</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-icon"
-                    />
-                    <span>POSTGRESQL</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" />
-                    <span>NEXT JS</span>
-                  </div>
+                  <div class="icon-badges"><img src="./assets/icons/C.svg" alt="C icon" /><span>C</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/github.svg" alt="Github icon" /><span>GITHUB</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/css.svg" alt="CSS-icon" /><span>CSS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/java.svg" alt="Java-icon" /><span>JAVA</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/html.svg" alt="HTML-icon" /><span>HTML</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" /><span>NODE JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/JS.svg" alt="JS-icon" /><span>JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/react.svg" alt="REACT-icon" /><span>REACT</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/postgresql.svg" alt="POSTGRESQL-icon" /><span>POSTGRESQL</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" /><span>NEXT JS</span></div>
                 </div>
                 <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/C.svg" alt="C icon" />
-                    <span>C</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="Github icon" />
-                    <span>GITHUB</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS-icon" />
-                    <span>CSS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="Java-icon" />
-                    <span>JAVA</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="HTML-icon" />
-                    <span>HTML</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" />
-                    <span>NODE JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="JS-icon" />
-                    <span>JS</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="REACT-icon" />
-                    <span>REACT</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="POSTGRESQL-icon"
-                    />
-                    <span>POSTGRESQL</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" />
-                    <span>NEXT JS</span>
-                  </div>
+                  <div class="icon-badges"><img src="./assets/icons/C.svg" alt="C icon" /><span>C</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/github.svg" alt="Github icon" /><span>GITHUB</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/css.svg" alt="CSS-icon" /><span>CSS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/java.svg" alt="Java-icon" /><span>JAVA</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/html.svg" alt="HTML-icon" /><span>HTML</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/node-js.svg" alt="NODE-JS-icon" /><span>NODE JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/JS.svg" alt="JS-icon" /><span>JS</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/react.svg" alt="REACT-icon" /><span>REACT</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/postgresql.svg" alt="POSTGRESQL-icon" /><span>POSTGRESQL</span></div>
+                  <div class="icon-badges"><img src="./assets/icons/nextjs.svg" alt="Nextjs-icon" /><span>NEXT JS</span></div>
                 </div>
               </div>
             </div>
           </div>
           <!-- grid item 3 (soft skill)-->
-          <div class="skills__grid_item">
+          <div class="skills__grid_item fade-in-up">
             <div class="skills__grid_item_header">
               <div>
                 <img src="./assets/check-icon.svg" alt="check-icon" />
@@ -319,39 +195,15 @@
               </p>
             </div>
             <div class="softSkills__container">
-              <div class="softSkills_badge">
-                <p>Giao Tiếp Chuyên Nghiệp</p>
-              </div>
-              <div class="softSkills_badge">
-                <p>Quản lý thời gian hiệu quả</p>
-              </div>
-              <div class="softSkills_badge">
-                <p>Đáng tin cậy</p>
-              </div>
-              <div class="softSkills_badge">
-                <p>Ham học hỏi</p>
-              </div>
+              <div class="softSkills_badge"><p>Giao Tiếp Chuyên Nghiệp</p></div>
+              <div class="softSkills_badge"><p>Quản lý thời gian hiệu quả</p></div>
+              <div class="softSkills_badge"><p>Đáng tin cậy</p></div>
+              <div class="softSkills_badge"><p>Ham học hỏi</p></div>
               <div class="softSkills_book_icons">
-                <img
-                  src="./assets/closed-book.svg"
-                  alt=""
-                  class="close-book-icon"
-                />
-                <img
-                  src="./assets/closed-book.svg"
-                  alt=""
-                  class="close-book-icon"
-                />
-                <img
-                  src="./assets/closed-book.svg"
-                  alt=""
-                  class="close-book-icon"
-                />
-                <img
-                  src="./assets/closed-book.svg"
-                  alt=""
-                  class="close-book-icon"
-                />
+                <img src="./assets/closed-book.svg" alt="" class="close-book-icon" />
+                <img src="./assets/closed-book.svg" alt="" class="close-book-icon" />
+                <img src="./assets/closed-book.svg" alt="" class="close-book-icon" />
+                <img src="./assets/closed-book.svg" alt="" class="close-book-icon" />
               </div>
             </div>
           </div>
@@ -365,7 +217,7 @@
     <section id="ProjectContainer" class="projects__section">
       <div class="container projects_container">
         <!-- header -->
-        <div class="section__header">
+        <div class="section__header fade-in-up">
           <h1 class="section__title">Đồ Án Thực Chiến</h1>
           <p class="section__description">
             Bộ đồ án thực tập này là kết quả của quá trình tự tìm tòi và học hỏi
@@ -377,128 +229,206 @@
             và logic của sản phẩm phần mềm.
           </p>
         </div>
+
         <!-- Cards -->
         <div class="projects__cards_container">
-          <!-- Dự án 1 -->
-          <a
-            href="https://github.com/salmon-tech404/my-portfolio"
-            class="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="project_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project1.jpg"
-                  alt="project01"
-                  class="project__cards_img"
-                />
-              </div>
+
+          <!-- Dự án 01 — Chat App -->
+          <div class="project_cards fade-in-up">
+            <div class="projects__cards_wrapper">
+              <img src="./assets/project1.jpg" alt="Chat App" class="project__cards_img" />
+            </div>
+            <div class="project__cards_content">
               <div class="project__cards_titles">
                 <h4>Dự Án 01</h4>
-                <h3>Todo List</h3>
+                <h3>Chat App</h3>
+              </div>
+              <p class="project__description">
+                Ứng dụng chat real-time với xác thực JWT, upload ảnh qua
+                Cloudinary và quản lý trạng thái người dùng bằng Zustand.
+              </p>
+              <div class="project__tech_tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Socket.io</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project__cards_actions">
+                <a
+                  href="https://chat-app-theta-puce.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="primaryButton"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/salmon-tech404/chatApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="outlineButton"
+                  >GitHub</a
+                >
               </div>
             </div>
-          </a>
-          <!-- Dự án 02 -->
-          <a
-            href="https://github.com/salmon-tech404/my-portfolio"
-            class="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="project_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project2.jpg"
-                  alt="project02"
-                  class="project__cards_img"
-                />
-              </div>
+          </div>
+
+          <!-- Dự án 02 — Realtime Translation -->
+          <div class="project_cards fade-in-up">
+            <div class="projects__cards_wrapper">
+              <img src="./assets/project2.jpg" alt="Realtime Translation Extension" class="project__cards_img" />
+            </div>
+            <div class="project__cards_content">
               <div class="project__cards_titles">
                 <h4>Dự Án 02</h4>
-                <h3>Trang Công Nghệ Thông Tin</h3>
+                <h3>Realtime Translation</h3>
+              </div>
+              <p class="project__description">
+                Chrome extension dịch thuật trực tiếp trên Google Meet, hỗ trợ
+                dịch real-time trong cuộc họp trực tuyến.
+              </p>
+              <div class="project__tech_tags">
+                <span>JavaScript</span>
+                <span>Chrome Extension</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <div class="project__cards_actions">
+                <a
+                  href="https://github.com/salmon-tech404/realtime-translation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="outlineButton"
+                  >GitHub</a
+                >
               </div>
             </div>
-          </a>
-          <!-- Dự án 03 -->
-          <a
-            href="https://github.com/salmon-tech404/my-portfolio"
-            class="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="project_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project3.jpg"
-                  alt="project03"
-                  class="project__cards_img"
-                />
-              </div>
+          </div>
+
+          <!-- Dự án 03 — Spotify Clone -->
+          <div class="project_cards fade-in-up">
+            <div class="projects__cards_wrapper">
+              <img src="./assets/project3.jpg" alt="Spotify Clone" class="project__cards_img" />
+            </div>
+            <div class="project__cards_content">
               <div class="project__cards_titles">
                 <h4>Dự Án 03</h4>
                 <h3>Spotify Clone</h3>
               </div>
-            </div>
-          </a>
-          <!-- Dự án 04 -->
-          <a
-            href="https://github.com/salmon-tech404/my-portfolio"
-            class="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="project_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project4.jpg"
-                  alt="project04"
-                  class="project__cards_img"
-                />
+              <p class="project__description">
+                Clone giao diện Spotify với player nhạc, danh sách bài hát và
+                thiết kế responsive.
+              </p>
+              <div class="project__tech_tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
               </div>
+              <div class="project__cards_actions">
+                <a
+                  href="https://github.com/salmon-tech404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="outlineButton"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Dự án 04 — Facebook Clone -->
+          <div class="project_cards fade-in-up">
+            <div class="projects__cards_wrapper">
+              <img src="./assets/project4.jpg" alt="Facebook Clone" class="project__cards_img" />
+            </div>
+            <div class="project__cards_content">
               <div class="project__cards_titles">
                 <h4>Dự Án 04</h4>
                 <h3>Facebook Clone</h3>
               </div>
-            </div>
-          </a>
-          <!-- Dự án 05 -->
-          <a
-            href="https://github.com/salmon-tech404/my-portfolio"
-            class="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="project_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project5.jpg"
-                  alt="project05"
-                  class="project__cards_img"
-                />
+              <p class="project__description">
+                Clone giao diện Facebook với bố cục newsfeed, sidebar và các
+                component UI cơ bản.
+              </p>
+              <div class="project__tech_tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
               </div>
+              <div class="project__cards_actions">
+                <a
+                  href="https://github.com/salmon-tech404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="outlineButton"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Dự án 05 — Business Website -->
+          <div class="project_cards fade-in-up">
+            <div class="projects__cards_wrapper">
+              <img src="./assets/project5.jpg" alt="Business Website Design" class="project__cards_img" />
+            </div>
+            <div class="project__cards_content">
               <div class="project__cards_titles">
                 <h4>Dự Án 05</h4>
                 <h3>Thiết Kế Trang Doanh Nghiệp</h3>
               </div>
-            </div>
-          </a>
-          <!-- Dự án 06 -->
-          <a
-            href="https://github.com/salmon-tech404/my-portfolio"
-            class="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="project_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project6.jpg"
-                  alt="project06"
-                  class="project__cards_img"
-                />
+              <p class="project__description">
+                Thiết kế giao diện website doanh nghiệp với landing page, giới
+                thiệu và trang liên hệ.
+              </p>
+              <div class="project__tech_tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>UX/UI</span>
               </div>
+              <div class="project__cards_actions">
+                <a
+                  href="https://github.com/salmon-tech404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="outlineButton"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Dự án 06 — Web Design -->
+          <div class="project_cards fade-in-up">
+            <div class="projects__cards_wrapper">
+              <img src="./assets/project6.jpg" alt="Web Design" class="project__cards_img" />
+            </div>
+            <div class="project__cards_content">
               <div class="project__cards_titles">
                 <h4>Dự Án 06</h4>
                 <h3>Thiết Kế Web</h3>
               </div>
+              <p class="project__description">
+                Dự án thiết kế web tập trung vào UX/UI với bố cục hiện đại và
+                trải nghiệm người dùng tốt.
+              </p>
+              <div class="project__tech_tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>UX/UI</span>
+              </div>
+              <div class="project__cards_actions">
+                <a
+                  href="https://github.com/salmon-tech404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="outlineButton"
+                  >GitHub</a
+                >
+              </div>
             </div>
-          </a>
+          </div>
+
         </div>
       </div>
     </section>
@@ -506,54 +436,35 @@
     <!-- FOOTER -->
     <footer class="footer__section">
       <div class="container footer__container">
-        <!-- Left: Brand / Name -->
         <div class="footer__brand">
           <h3>Salmon</h3>
           <p>Japanese Translator & UX/UI Designer</p>
         </div>
 
-        <!-- Middle: Contact Info -->
         <div class="footer__contact">
           <h3>Liên Hệ</h3>
           <ul>
-            <li>
-              Email:
-              <a href="mailto:diep.khacvu@gmail.com">diep.khacvu@gmail.com</a>
-            </li>
+            <li>Email: <a href="mailto:diep.khacvu@gmail.com">diep.khacvu@gmail.com</a></li>
             <li>Phone: <a href="tel:+84365479851">0365 479 851</a></li>
           </ul>
         </div>
 
-        <!-- Right: Social Links -->
         <div class="footer__socials">
           <h3>Kết Nối</h3>
           <div class="footer__icons">
-            <a
-              href="https://github.com/salmon-tech404"
-              target="_blank"
-              aria-label="GitHub"
-            >
+            <a href="https://github.com/salmon-tech404" target="_blank" aria-label="GitHub">
               <img src="./assets/github.png" alt="GitHub" />
             </a>
-            <a
-              href="https://www.linkedin.com/in/vu-khac-diep-495652227/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
+            <a href="https://www.linkedin.com/in/vu-khac-diep-495652227/" target="_blank" aria-label="LinkedIn">
               <img src="./assets/linkedin.png" alt="LinkedIn" />
             </a>
-            <a
-              href="https://www.facebook.com/vu.diepkhac"
-              target="_blank"
-              aria-label="Facebook"
-            >
+            <a href="https://www.facebook.com/vu.diepkhac" target="_blank" aria-label="Facebook">
               <img src="./assets/facebook.png" alt="Facebook" />
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Bottom line -->
       <div class="footer__bottom">
         <p>© 2025 Salmon Portfolio. All rights reserved.</p>
       </div>
