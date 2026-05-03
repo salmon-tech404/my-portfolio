@@ -116,3 +116,18 @@
     transition: all 0.2s ease;
   }
 }
+
+.project__coming-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1.5px dashed hsla(var(--p-700-code), 0.35);
+  color: var(--n-500);
+  background: hsla(var(--p-500-code), 0.05);
+}
